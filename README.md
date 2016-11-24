@@ -1,4 +1,5 @@
 # Tinted ProgressBar
+[![](https://jitpack.io/v/jchernandez/TintedProgressBar.svg)](https://jitpack.io/#jchernandez/TintedProgressBar)
 
 ## What is a Tinted ProgressBar?
 
@@ -19,4 +20,25 @@ Simply add the View to your layout:
         app:tint_color="@color/colorAccent"
         android:layout_centerHorizontal="true"
         android:id="@+id/progressBar" />
+```
+# Gradle Dependency
+
+### Repository
+The Gradle dependency is available via [JitPack](https://jitpack.io/#jchernandez/SlideButton).
+
+Add it in your root build.gradle at the end of repositories:
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```
+
+ Add the dependency:
+```gradle
+dependencies {
+    compile 'com.github.jchernandez:TintedProgressBar:-0.0.1'
+}
 ```
