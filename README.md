@@ -39,6 +39,6 @@ allprojects {
  Add the dependency:
 ```gradle
 dependencies {
-    compile 'com.github.jchernandez:TintedProgressBar:0.0.1'
+    compile 'com.github.jchernandez:TintedProgressBar:0.0.2'
 }
 ```
