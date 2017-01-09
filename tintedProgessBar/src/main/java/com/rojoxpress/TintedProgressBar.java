@@ -60,8 +60,11 @@ public class TintedProgressBar extends ProgressBar {
             a.recycle();
         }
 
-        this.getIndeterminateDrawable().mutate().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
 
+        if(isIndeterminate())
+            this.getIndeterminateDrawable().mutate().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
+        else
+            this.getProgressDrawable().mutate().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
     }
 
 }
